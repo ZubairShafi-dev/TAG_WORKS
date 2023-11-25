@@ -11,7 +11,7 @@ class ProductViewModel(context: Application) : AndroidViewModel(context) {
     private val repo = Repo(context)
     private val constants = Constants()
 
-    fun saveProductToFirebase(product:ProductModel): Task<Void> {
+    fun saveProductToFirebase(product:ProductModel): Task<Boolean> {
         return repo.saveProduct(product)
     }
 }

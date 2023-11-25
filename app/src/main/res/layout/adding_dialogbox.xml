@@ -84,6 +84,7 @@
 
             <!-- Cell with left and right borders -->
             <EditText
+                android:id="@+id/section"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -95,6 +96,7 @@
 
             <!-- Cell with right border -->
             <EditText
+                android:id="@+id/colors"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -105,6 +107,7 @@
 
             <!-- Cell with right border -->
             <EditText
+                android:id="@+id/price"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -114,6 +117,7 @@
                 android:layout_marginEnd="1dp"/>
 
             <EditText
+                android:id="@+id/maxDiscount"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
