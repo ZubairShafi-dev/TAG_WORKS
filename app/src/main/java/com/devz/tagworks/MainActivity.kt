@@ -21,11 +21,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
     private fun loadAdminFragment() {
-        val adminFragment = AdminFragment.newInstance("param1", "param2")
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragmentContainer, adminFragment)
-            .addToBackStack(null)  // Optional: Add the fragment to the back stack
-            .commit()
+        val transaction = supportFragmentManager.beginTransaction()
+        val adminFragment = AdminFragment()
+        transaction.addToBackStack(null)
+
+        transaction.replace(R.id.fragmentContainer, adminFragment)
+        transaction.commit()
     }
 }

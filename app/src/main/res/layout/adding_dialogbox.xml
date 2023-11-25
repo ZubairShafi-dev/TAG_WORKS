@@ -124,7 +124,13 @@
 
         <!-- Row 2 with sample content -->
     </TableLayout>
-
+<Button
+    android:id="@+id/savebtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Save"
+    android:layout_margin="16dp"
+    />
 
 
 </LinearLayout>
