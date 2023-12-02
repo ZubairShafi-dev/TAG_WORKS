@@ -5,36 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Ui.MainActivity">
 
-    <LinearLayout
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        >
+    </com.google.android.material.tabs.TabLayout>
 
-        <TextView
-            android:id="@+id/tvCustomer"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:text="Customer"
-            />
-        <TextView
-            android:id="@+id/tvAdmin"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:text="Admin"
-            />
-
-    </LinearLayout>
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="2dp"  />
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        />
 
 
 </LinearLayout>

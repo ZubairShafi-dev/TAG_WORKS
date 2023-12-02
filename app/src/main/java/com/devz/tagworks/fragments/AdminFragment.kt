@@ -1,4 +1,4 @@
-package com.devz.tagworks.Ui
+package com.devz.tagworks.fragments
 
 import android.content.Context
 import android.content.Intent
